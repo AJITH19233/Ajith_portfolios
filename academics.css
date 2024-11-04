@@ -1,0 +1,38 @@
+.education .box-container{
+    display: flex;
+    align-items:center;
+    justify-content:last baseline;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-left: 3rem;
+}
+
+
+.education .box-container .box{
+    width: 25rem;
+    margin: 3rem 1rem;
+    padding-left: 2rem;
+    border-left: .2rem solid #fff;
+    position:relative;
+}
+
+.education .box-container .box span{
+    font-size: 1.2rem;
+    background: #f9ca24;
+    color: #0d0a0a;
+    border-radius: 10rem;
+    padding: .3rem 1.7rem;
+
+}
+
+.education .box-container .box h3{
+    font-size: 1.2rem;
+    color: #fff;
+    padding-top: 1rem;
+}
+
+.education .box-container .box p{
+    font-size: 1rem;
+    color: #fff;
+    padding-top: .7rem;
+}

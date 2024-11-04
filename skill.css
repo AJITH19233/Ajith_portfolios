@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.skills {
+    padding: 2rem;
+    text-align: center;
+    background-color: black;
+    color: #fff;
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+    color: #f9ca24;
+    margin-bottom: 2rem;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.skill-box {
+    background-color: #333;
+    padding: 1.5rem;
+    width: 20rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.skill-box:hover {
+    transform: translateY(-10px);
+}
+
+.skill-box i {
+    font-size: 3rem;
+    color: #f9ca24;
+    margin-bottom: 1rem;
+}
+
+.skill-box h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.progress {
+    background-color: #444;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 10px;
+    margin-top: 1rem;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #f9ca24;
+    width: 0;
+    transition: width 1s ease-in-out;
+    border-radius: 5px;
+}
+
+/* Animation for progress bars */
+.skill-box:hover .progress-bar {
+    animation: fill 1s forwards;
+}
+
+@keyframes fill {
+    from {
+        width: 0;
+    }
+    to {
+        width: inherit;
+    }
+}
